@@ -1,90 +1,442 @@
 {
-    "project": {
-        "id": "zb-faq-cailapub-template_ru",
-        "name": "zb-faq-cailapub-template_ru",
-        "folder": "/"
+  "project" : {
+    "id" : "botbankak-1000070701-Ili",
+    "name" : "botbankak-1000070701-Ili",
+    "folder" : "/jaicp"
+  },
+  "settings" : {
+    "language" : "ru",
+    "spellingCorrection" : false,
+    "classificationAlgorithm" : "sts",
+    "timezone" : "Europe/Moscow",
+    "extendedSettings" : {
+      "tokenizerEngine" : "mystem",
+      "useShared" : false
     },
-    "settings": {
-        "language": "ru",
-        "spellingCorrection": false,
-        "classificationAlgorithm": "sts",
-        "timezone": "Europe/Moscow",
-        "extendedSettings": {
-      "tokenizerEngine": "mystem",
-            "useShared": false
-        }
+    "shared" : false
+  },
+  "intents" : [ {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "enabled" : true,
+    "shared" : false,
+    "classificationRules" : {
+      "refs" : [ ]
     },
-    "intents": [
-        {
-            "path": "/пока",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "пока",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        },
-        {
-            "path": "/привет",
-            "description": null,
-            "answer": null,
-            "customData": null,
-            "enabled": true,
-            "phrases": [
-                {
-                    "text": "привет",
-                    "entities": null
-                }
-            ],
-            "patterns": null,
-            "slots": null
-        }
-    ],
-    "entities": [],
-    "enabledSystemEntities": [
-        "duckling.number",
-        "duckling.time",
-        "duckling.duration",
-        "duckling.phone-number",
-        "duckling.email",
-        "duckling.url"
-    ],
-    "systemEntities": [
-        {
-            "name": "duckling.number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.time",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.duration",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.phone-number",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.email",
-            "version": "v2",
-            "enabled": true
-        },
-        {
-            "name": "duckling.url",
-            "version": "v2",
-            "enabled": true
-        }
-    ]
+    "priority" : 0
+  }, {
+    "path" : "/Хочу заказать карту",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Хочу заказать карту"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/карта для социальных выплат",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "карта для социальных выплат"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/карта для получения социальных выплат",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "карта для получения социальных выплат"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/карта для получения пособий",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "карта для получения пособий"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/зачисление социальных выплат или пенсии",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "мне бы карточку для соц платежей"
+    }, {
+      "text" : "карта для социальных выплат"
+    }, {
+      "text" : "- зачисление социальных выплат или пенсии;"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Оплата в магазине, снятие наличных, зачисление заработной плат, другое",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "для получения заработной платы нужна карта"
+    }, {
+      "text" : "зарплату на карту"
+    }, {
+      "text" : "карта нужна чтобы платежи летели"
+    }, {
+      "text" : "хочу получать зп на карту"
+    }, {
+      "text" : "хочу карту с выгодными условиями"
+    }, {
+      "text" : "хочу карту мастеркард"
+    }, {
+      "text" : "хочу карту виза"
+    }, {
+      "text" : "хочу получать зарплату на карту"
+    }, {
+      "text" : "карта для оплаты в магазинах"
+    }, {
+      "text" : "Оплата в магазине, снятие наличных, зачисление заработной плат, другое"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Пенсия",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пенсионные выплаты на банковскую карту"
+    }, {
+      "text" : "хочу пенсионную карту"
+    }, {
+      "text" : "платежи пенсионные на карту как получать"
+    }, {
+      "text" : "хочу получать пенсию на карту"
+    }, {
+      "text" : "карта для пенсии"
+    }, {
+      "text" : "Пенсия"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Кешбэк",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "cash-back карты"
+    }, {
+      "text" : "кеш бека побольше есть карты"
+    }, {
+      "text" : "кэшбек на карту"
+    }, {
+      "text" : "какая у вас лучшая карта с кэш беком"
+    }, {
+      "text" : "карта с кешбеком"
+    }, {
+      "text" : "Кешбэк"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/250000",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "250000"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/500000",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "500000"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/1000000",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "1000000"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Бесплатное обслуживание",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "нужна карта, чтобы пользоваться приложением"
+    }, {
+      "text" : "нужна карта, чтобы пользоваться интернет-банком"
+    }, {
+      "text" : "хочу карту, чтобы пользоваться личным кабинетом"
+    }, {
+      "text" : "хочу народную карту"
+    }, {
+      "text" : "хочу карту чтобы не платить за обслуживание"
+    }, {
+      "text" : "хочу карту мир"
+    }, {
+      "text" : "хочу карту без обслуживания"
+    }, {
+      "text" : "хочу карту с бесплатным обслуживанием"
+    }, {
+      "text" : "Бесплатное обслуживание"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/пока",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "пока"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/привет",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "привет"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Новый вопрос",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Новый вопрос"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/мне бы карточку для соц платежей",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "мне бы карточку для соц платежей"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/карта для зачисления детских",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "карта для зачисления детских"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/карта для получения детских пособий",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "карта для получения детских пособий"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/в вашем банке карты для соц платежек есть",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "в вашем банке карты для соц платежек есть"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "priority" : 0
+  }, {
+    "path" : "/Начисление процентов",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "карта с огромным лимитом в банкоматах"
+    }, {
+      "text" : "хочу карту чтобы снял сколько хочешь"
+    }, {
+      "text" : "нужна карта с большими лимитами снятия"
+    }, {
+      "text" : "нужна карта с высокими лимитами снятия"
+    }, {
+      "text" : "хочу карту с повышенным лимитом снятия"
+    }, {
+      "text" : "хочу карту чтобы снимать дофига"
+    }, {
+      "text" : "Повышенный лимит"
+    }, {
+      "text" : "Начисление процентов"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  } ],
+  "entities" : [ ],
+  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "spellerDictionary" : [ ],
+  "systemEntities" : [ {
+    "name" : "mystem.geo",
+    "enabled" : false
+  }, {
+    "name" : "mystem.persn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.obsc",
+    "enabled" : false
+  }, {
+    "name" : "mystem.patrn",
+    "enabled" : false
+  }, {
+    "name" : "mystem.famn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.romn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.latn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.numb",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.intg",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.abbr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.name",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.surn",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.patr",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.geox",
+    "enabled" : false
+  }, {
+    "name" : "pymorphy.orgn",
+    "enabled" : false
+  }, {
+    "name" : "duckling.number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.ordinal",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.amount-of-money",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.distance",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.date",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.time-of-day",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "duckling.duration",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.phone-number",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.email",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.url",
+    "version" : "v2",
+    "enabled" : true
+  }, {
+    "name" : "duckling.interval",
+    "version" : "v2",
+    "enabled" : false
+  }, {
+    "name" : "mlps-obscene.obscene",
+    "enabled" : false
+  }, {
+    "name" : "zb.datetime",
+    "enabled" : false
+  }, {
+    "name" : "zb.number",
+    "enabled" : false
+  } ],
+  "faq" : [ {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ",
+    "replies" : [ ]
+  }, {
+    "intentPath" : "/KnowledgeBase/FAQ.Пустой шаблон FAQ/Root/Новый вопрос",
+    "replies" : [ {
+      "type" : "text",
+      "text" : "",
+      "markup" : "plain"
+    } ]
+  } ]
 }
